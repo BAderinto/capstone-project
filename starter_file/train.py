@@ -37,12 +37,14 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--n_estimators', type=int, default=20, help="The number of trees in the forest")
+    parser.add_argument('--min_samples_split', type=int, default=2, help="The minimum number of samples required to split an internal node")
     
     args = parser.parse_args(args=[])
     
     run.log("The number of trees in the forest:", np.int(args.n_estimators))
+    run.log("The minimum number of samples required to split an internal node:", np.int(args.min_samples_split))
     
-    model = RandomForestClassifier(n_estimators=args.n_estimators, random_state=0).fit(x_train, y_train)
+    model = RandomForestClassifier(n_estimators=args.n_estimators, random_state=0, min_samples_split=args.min_samples_split).fit(x_train, y_train)
     #predict
     fh_preds = model.predict(x_test)
 
