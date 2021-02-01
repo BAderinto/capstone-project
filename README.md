@@ -164,14 +164,6 @@ Below is the script to pass the test data to the model as an HTTP POST request a
 
 Screenshots below show a demonstration of sample data response from the deployed model.
 
-**Demo**
-
-![deployResults](Images/deployResults.png)
-
-**Deployed Model**
-
-![deployedModel](Images/deployedModel.png)
-
 ## Screen Recording
 [screen recording](https://youtu.be/FLeCelctrKI)
 
