@@ -140,9 +140,7 @@ HyperDriveConfig was created using the `ScriptRunConfig` which was created by sp
 ![autoML_bestModel](Images/hyperconfig.png)
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![best hyperparameter tuning](Images/best_hyp_model.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
