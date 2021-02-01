@@ -1,5 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 # Capstone Project - Fetal Health Classification
 
 ### Overview
@@ -127,6 +125,17 @@ n_cross_validations | No. of cross validations to perform | 5
 
 ![autoML_bestModel](Images/best_automl_run.png)
 
+**Others**
+![autoML_bestModel](Images/automl1.png)
+![autoML_bestModel](Images/automl2.png)
+![autoML_bestModel](Images/automl3.png)
+![autoML_bestModel](Images/automl4.png)
+![autoML_bestModel](Images/automl5.png)
+![autoML_bestModel](Images/automl6.png)
+![autoML_bestModel](Images/automl7.png)
+![autoML_bestModel](Images/automl8.png)
+![autoML_bestModel](Images/automl9.png)
+
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 For the hyperparameter tuning experiment, `RandomForestClassifier` algorithm from the `sklearn.ensemble` framework in conjuction with hyperDrive was used. The only hyperparameter used for this experiment is `n_estimators`, the number of trees in the forest, which was given the value 20
@@ -141,6 +150,9 @@ HyperDriveConfig was created using the `ScriptRunConfig` which was created by sp
 
 ### Results
 ![best hyperparameter tuning](Images/best_hyp_model.png)
+![best hyperparameter tuning](Images/hyp_result1.png)
+![best hyperparameter tuning](Images/hyp_result2.png)
+
 
 ## Model Deployment
 
