@@ -129,7 +129,15 @@ n_cross_validations | No. of cross validations to perform | 5
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+For the hyperparameter tuning experiment, `RandomForestClassifier` algorithm from the `sklearn.ensemble` framework in conjuction with hyperDrive was used. The only hyperparameter used for this experiment is `n_estimators`, the number of trees in the forest, which was given the value 20
 
+The conda_dependencies.yml was added to the created environment that contains the scikit-learn library as shown below.
+
+![autoML_bestModel](Images/scikit-env.png)
+
+HyperDriveConfig was created using the `ScriptRunConfig` which was created by specifying the training script, compute target and environment, the termination policy, `BanditPolicy` as well as the hyperparameteras shown below. 
+
+![autoML_bestModel](Images/hyperconfig.png)
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
@@ -147,3 +155,6 @@ n_cross_validations | No. of cross validations to perform | 5
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+## Reference
+[sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
