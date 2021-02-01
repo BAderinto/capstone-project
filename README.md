@@ -167,8 +167,10 @@ Screenshots below show a demonstration of sample data response from the deployed
 ## Screen Recording
 [screen recording](https://youtu.be/FLeCelctrKI)
 
+[screen recording without voice](https://youtu.be/5YWHJSXgUgU)
+
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+None
 
 ## Reference
 [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
