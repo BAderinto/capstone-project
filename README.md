@@ -160,7 +160,7 @@ The test data passed to the model endpoint is converted to JSON format as shwon 
 
 Below is the script to pass the test data to the model as an HTTP POST request and return the response; 
 
-![web service](result.png)
+![web service](Images/result.png)
 
 Screenshots below show a demonstration of sample data response from the deployed model.
 
