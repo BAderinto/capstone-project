@@ -125,7 +125,7 @@ n_cross_validations | No. of cross validations to perform | 5
 
 **Best Model**
 
-![autoML_bestModel](Images/automl_result3.png)
+![autoML_bestModel](Images/best_automl_run.png)
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
