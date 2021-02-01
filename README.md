@@ -143,7 +143,34 @@ HyperDriveConfig was created using the `ScriptRunConfig` which was created by sp
 ![best hyperparameter tuning](Images/best_hyp_model.png)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+To deploy a Model using Azure Machine Learning Service, we need following:
+1. A trained Model
+1. Inference configuration; includes scoring script and environment
+1. Deploy configuration; includes choice of deployment (ACI, AKS or local) and cpu/gpu/memory allocation
+
+Scoring script, `score.py`, which describes the input data that the model expects and passes it to the model for prediction and returns the results as well as the environment 
+can be downloaded and saved from the model generated from the best automl experiment run.  
+
+The deployment was achieved using Azure Container Instances with `cpu_cores = 1` and `memory_gb = 1`, while the Inference configuration is created using the downloaded scoring script.
+![aci_webservice_model](Images/automl_aci_model.png)
+
+The test data passed to the model endpoint is converted to JSON format as shwon below.
+![aci_webservice_model](Images/test_data_json.png)
+
+Below is the script to pass the test data to the model as an HTTP POST request and return the response; 
+
+![web service](result.png)
+
+Screenshots below show a demonstration of sample data response from the deployed model.
+
+**Demo**
+
+![deployResults](Images/deployResults.png)
+
+**Deployed Model**
+
+![deployedModel](Images/deployedModel.png)
 
 ## Screen Recording
 [screen recording](https://youtu.be/FLeCelctrKI)
