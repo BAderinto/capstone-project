@@ -138,7 +138,7 @@ n_cross_validations | No. of cross validations to perform | 5
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
-For the hyperparameter tuning experiment, `RandomForestClassifier` algorithm from the `sklearn.ensemble` framework in conjuction with hyperDrive was used. The only hyperparameter used for this experiment is `n_estimators`, the number of trees in the forest, which was given the value 20
+For the hyperparameter tuning experiment, `RandomForestClassifier` algorithm from the `sklearn.ensemble` framework in conjuction with hyperDrive was used. The hyperparameters used for this experiment are `n_estimators`, the number of trees in the forest, with default value is 20 and `min_samples_split` the minimum number of samples required to split an internal node, default value is 2.
 
 The conda_dependencies.yml was added to the created environment that contains the scikit-learn library as shown below.
 
@@ -177,9 +177,8 @@ Below is the script to pass the test data to the model as an HTTP POST request a
 Screenshots below show a demonstration of sample data response from the deployed model.
 
 ## Screen Recording
-[screen recording](https://youtu.be/FLeCelctrKI)
+[screen recording](https://youtu.be/b-mrf_2GbXo)
 
-[screen recording without voice](https://youtu.be/5YWHJSXgUgU)
 
 ## Standout Suggestions
 None
