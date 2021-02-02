@@ -10,6 +10,20 @@ Parallel to notion of child mortality is of course maternal mortality, which acc
 The dataset was collected using Cardiotocograms (CTGs) are a simple and cost accessible option to assess fetal health, allowing healthcare professionals to take action in order to prevent child and maternal mortality. The equipment itself works by sending ultrasound pulses and reading its response, thus shedding light on fetal heart rate (FHR), fetal movements, uterine contractions and more.
 
 
+## Experiment Overview
+This capstone project was aimed at training machine learning models for classifying fetal health risks that could prevent child and maternal mortality based on Cardiotocograms(CTG) exams data. The project takes the dataset and the `AutoML` and `HyperDrive` training capabilities of the Microsoft Azure Machine Learning SDK to achieve the classification experiment. The two experiments were successfully completed, and the best performing model based on their accuracy metric was the AutoML experiment which was then deployed as a ACI (Azure Container Instance) web service.
+
+The `HyperDrive` experiment was aimed at optimizing the parameters of a pre-selected machine learning algorithm in this case `RandomForestClassifier`, based on its returned percentage accuracy to achieve a high performance from machine learning model. The Azure ML experiment environment was defined in a `conda environment YAML` file with the required training script dependencies. A `ScriptRunConfig` object was used to specify the configuration details of your training job, the training script, environment to use, and the compute target used. The random sampling was used to try different configuration sets of hyperparameters – `n_estimators` and `min_samples_split`, to maximize the primary metric, Accuracy. The experiment was submitted through the specification of the `HyperDriveConfig` which contains information about hyperparameter space sampling, termination policy, primary metric, estimator, and the compute target. The experiment run resulted in 93.57% accuracy.
+
+![hyperdrive_config experiment run accuracy](Image/hyeprconfig_accuracy.png)
+
+
+The AutoML experiment gives the opportunity to automatically explore a variety of machine learning algorithms to get improved model performance based on the primary metric, accuracy. The result of the the AutoML experiment showed that the `Voting Ensemble` model was the best performing algorithm with accuracy > 95.51%. 
+
+![automl experiment run accuracy](Image/voting_ensemble.png)
+
+The best performing model from the AutoML experiment was deployed as a webservice using Azure Container Instance (ACI) and a REST URI was produced. HTTP post requests were successfully sent to the URI for Inferencing using the test data in json format. The service was successfuly deleted afterwards.
+
 
 ## Dataset
 It contains 2126 records of features extracted from Cardiotocogram exams, which were then classified by three expert obstetritians into 3 classes - Normal,Suspect, Pathological.
