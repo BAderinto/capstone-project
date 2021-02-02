@@ -146,7 +146,8 @@ The conda_dependencies.yml was added to the created environment that contains th
 
 HyperDriveConfig was created using the `ScriptRunConfig` which was created by specifying the training script, compute target and environment, the termination policy, `BanditPolicy` as well as the hyperparameteras shown below. 
 
-![autoML_bestModel](Images/hyperconfig.png)
+![autoML_bestModel](Images/hyperconfig1.png)
+![autoML_bestModel](Images/hyperconfig20.png)
 
 ### Results
 ![best hyperparameter tuning](Images/best_hyp_model.png)
