@@ -15,7 +15,7 @@ This capstone project was aimed at training machine learning models for classify
 
 The `HyperDrive` experiment was aimed at optimizing the parameters of a pre-selected machine learning algorithm in this case `RandomForestClassifier`, based on its returned percentage accuracy to achieve a high performance from machine learning model. The Azure ML experiment environment was defined in a `conda environment YAML` file with the required training script dependencies. A `ScriptRunConfig` object was used to specify the configuration details of your training job, the training script, environment to use, and the compute target used. The random sampling was used to try different configuration sets of hyperparameters – `n_estimators` and `min_samples_split`, to maximize the primary metric, Accuracy. The experiment was submitted through the specification of the `HyperDriveConfig` which contains information about hyperparameter space sampling, termination policy, primary metric, estimator, and the compute target. The experiment run resulted in 93.57% accuracy.
 
-![hyperdrive_config experiment run accuracy](Images/hyeprconfig_accuracy.png)
+![hyperdrive_config experiment run accuracy](Images/hyperconfig_accuracy.png)
 
 
 The AutoML experiment gives the opportunity to automatically explore a variety of machine learning algorithms to get improved model performance based on the primary metric, accuracy. The result of the the AutoML experiment showed that the `Voting Ensemble` model was the best performing algorithm with accuracy > 95.51%. 
