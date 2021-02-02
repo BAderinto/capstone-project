@@ -203,8 +203,14 @@ Screenshots below show a demonstration of sample data response from the deployed
 [screen recording](https://youtu.be/b-mrf_2GbXo)
 
 
-## Standout Suggestions
-None
+## Future Improvements
+To improve this project in future:
+•	compare "Accuracy" to "AUC Weighted" as primary metric 
+•	vary values for the n_estimators and the fractional(float) values of min_samples_split hyperparameters
+•	explore max_depth parameter for the algorithm.
+•	convertion of the model to ONNX format would be considered
+
+
 
 ## Reference
 [sklearn.ensemble.RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
