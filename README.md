@@ -124,7 +124,9 @@ This is screenshot of the best model trained with it's parameters.
 ![autoML_bestModel](Images/best_automl_run.png)
 
 **Others**
-**Precsion-Recall curve plot showing the accuracy, AUC_macro, AUC_micro, AUC_weighted values for the best run.**
+Below are diagnostic curves that help in the interpretation of probabilistic forecast for classification predictive modeling problems.
+
+**Precsion-Recall curve plot showing the accuracy, AUC_macro, AUC_micro, AUC_weighted values for the best run. **
 ![autoML_bestModel](Images/automl1.png)
 ![autoML_bestModel](Images/automl2.png)
 
