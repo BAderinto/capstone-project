@@ -111,28 +111,34 @@ n_cross_validations | No. of cross validations to perform | 5
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 ### AutoML Screenshots
 
 **Run Details Widget**
-
+This is screenshot of the `RunDetails` widget for the automl experiment after completion.
 ![autoML_runDetails](Images/automl_result0.png)
 
 ![autoML_runDetails_accuracy](Images/automl_result2.png)
 
 **Best Model**
-
+This is screenshot of the best model trained with it's parameters.
 ![autoML_bestModel](Images/best_automl_run.png)
 
 **Others**
+**Precsion-Recall curve plot showing the accuracy, AUC_macro, AUC_micro, AUC_weighted values for the best run.**
 ![autoML_bestModel](Images/automl1.png)
 ![autoML_bestModel](Images/automl2.png)
-![autoML_bestModel](Images/automl3.png)
+
+**ROC curve plot**
 ![autoML_bestModel](Images/automl4.png)
+
+**Calibrartion curve**
 ![autoML_bestModel](Images/automl5.png)
 ![autoML_bestModel](Images/automl6.png)
+
+**Lift curve**
 ![autoML_bestModel](Images/automl7.png)
+
+**Cummlative gains curve**
 ![autoML_bestModel](Images/automl8.png)
 ![autoML_bestModel](Images/automl9.png)
 
